@@ -1,15 +1,12 @@
 package com.example.apiquiz.ws.controllers;
 
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,8 +19,6 @@ import com.example.apiquiz.ws.entities.CategoryJson;
 import com.example.apiquiz.ws.entities.Question;
 import com.example.apiquiz.ws.entities.QuestionAndAnswers;
 import com.example.apiquiz.ws.services.QuestionService;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
 @RestController
 @RequestMapping(value = "questionws")
