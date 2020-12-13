@@ -38,7 +38,7 @@ public class QuestionController {
 		}
 	}
 
-	@GetMapping(path = "/questions/{category}")
+	@GetMapping(path = "/questions/{category}",produces={"application/json; charset=UTF-8"})
 	public ResponseEntity<CategoryJson> getAllQuestion(@PathVariable("category") String category) {
 
 		if (category.equalsIgnoreCase("english")) {
