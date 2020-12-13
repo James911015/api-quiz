@@ -229,7 +229,7 @@ public class QuestionController {
 			list_en_questions.add(en_4);
 			// list_en_questions.add(en_5);
 
-			CategoryJson CategoryEnglish = new CategoryJson("spanish", list_en_questions);
+			CategoryJson CategoryEnglish = new CategoryJson("history", list_en_questions);
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
 
 		} else if (category.equalsIgnoreCase("logic")) {
