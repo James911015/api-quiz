@@ -8,8 +8,8 @@ public class CategoryJson {
 	List<QuestionAndAnswers> questionAndAnswers;
 	
 	
-	public CategoryJson(List<QuestionAndAnswers> questionAndAnswers){
-		this.category = "category";
+	public CategoryJson(String category,List<QuestionAndAnswers> questionAndAnswers){
+		this.category = category;
 		this.questionAndAnswers= questionAndAnswers;
 	}
 
