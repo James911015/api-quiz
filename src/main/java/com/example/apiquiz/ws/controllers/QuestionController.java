@@ -105,6 +105,7 @@ public class QuestionController {
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
 
 		} else if (category.equalsIgnoreCase("science")) {
+			
 			Answers[] list_en_answers_1 = new Answers[4];
 			list_en_answers_1[0] = new Answers("a. El píe.", false);
 			list_en_answers_1[1] = new Answers("b. La Mano.", true);
@@ -167,47 +168,48 @@ public class QuestionController {
 			CategoryJson CategoryEnglish = new CategoryJson("science", list_en_questions);
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
 
-		} else if (category.equalsIgnoreCase("spanish")) {
+		} else if (category.equalsIgnoreCase("history")) {
+			
 			Answers[] list_en_answers_1 = new Answers[4];
-			list_en_answers_1[0] = new Answers("answer1_1", true);
-			list_en_answers_1[1] = new Answers("answer1_2", false);
-			list_en_answers_1[2] = new Answers("answer1_3", false);
-			list_en_answers_1[3] = new Answers("answer1_4", false);
+			list_en_answers_1[0] = new Answers("a. 1492", true);
+			list_en_answers_1[1] = new Answers("b. 1500", false);
+			list_en_answers_1[2] = new Answers("c. 2009", false);
+			list_en_answers_1[3] = new Answers("d. Ninguna de las anteriores", false);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("Pregunta1", list_en_answers_1);
+			QuestionAndAnswers en_1 = new QuestionAndAnswers("¿En que año descubrió Colón América?", list_en_answers_1);
 
-			Answers en_2_1 = new Answers("answer2_1", false);
-			Answers en_2_2 = new Answers("answer2_2", true);
-			Answers en_2_3 = new Answers("answer2_3", false);
-			Answers en_2_4 = new Answers("answer2_4", false);
+			Answers en_2_1 = new Answers("a. Primera cruzada", false);
+			Answers en_2_2 = new Answers("b. Guerra de las galaxias", false);
+			Answers en_2_3 = new Answers("c. La guerra de los 100 años", true);
+			Answers en_2_4 = new Answers("d. Ninguna de las anteriores", false);
 			Answers[] list_en_answers_2 = new Answers[4];
 			list_en_answers_2[0] = en_2_1;
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("Pregunta2", list_en_answers_2);
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿En que guerra participó Juana de Arco?", list_en_answers_2);
 
-			Answers en_3_1 = new Answers("answer3_1", false);
-			Answers en_3_2 = new Answers("answer3_2", false);
-			Answers en_3_3 = new Answers("answer3_3", true);
-			Answers en_3_4 = new Answers("answer3_4", false);
+			Answers en_3_1 = new Answers("a. Cuzco", true);
+			Answers en_3_2 = new Answers("b. Quito", false);
+			Answers en_3_3 = new Answers("c. Bilbao", true);
+			Answers en_3_4 = new Answers("d. Ninguna de las anteriores", false);
 			Answers[] list_en_answers_3 = new Answers[4];
 			list_en_answers_3[0] = en_3_1;
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("Pregunta3", list_en_answers_3);
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Cuál era la capital del Imperio Inca?", list_en_answers_3);
 
-			Answers en_4_1 = new Answers("answer4_1", false);
-			Answers en_4_2 = new Answers("answer4_2", false);
-			Answers en_4_3 = new Answers("answer4_3", false);
-			Answers en_4_4 = new Answers("answer4_4", true);
+			Answers en_4_1 = new Answers("a. Siglo XVI", false);
+			Answers en_4_2 = new Answers("b. Siglo XVII", false);
+			Answers en_4_3 = new Answers("a. Siglo XXX", false);
+			Answers en_4_4 = new Answers("d. Ninguna de las anteriores", true);
 			Answers[] list_en_answers_4 = new Answers[4];
 			list_en_answers_4[0] = en_4_1;
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("Pregunta4", list_en_answers_4);
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Cuándo se produjo principalmente el Siglo de Oro?", list_en_answers_4);
 
 			/*
 			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
