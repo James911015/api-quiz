@@ -38,7 +38,7 @@ public class QuestionController {
 		}
 	}
 
-	@GetMapping(path = "/questions/{category}",produces={"application/json; charset=UTF-8"})
+	@GetMapping(path = "/questions/{category}", produces = { "application/json; charset=UTF-8" })
 	public ResponseEntity<CategoryJson> getAllQuestion(@PathVariable("category") String category) {
 
 		if (category.equalsIgnoreCase("english")) {
@@ -48,7 +48,8 @@ public class QuestionController {
 			list_en_answers_1[2] = new Answers("c. Asco", false);
 			list_en_answers_1[3] = new Answers("d. Ninguna", false);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("Selecciona la traducción correcta de ASK", list_en_answers_1);
+			QuestionAndAnswers en_1 = new QuestionAndAnswers("Selecciona la traducción correcta de ASK",
+					list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. Comer", false);
 			Answers en_2_2 = new Answers("b. Venir", true);
@@ -59,7 +60,8 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("Selecciona la traducción correcta de COME", list_en_answers_2);
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("Selecciona la traducción correcta de COME",
+					list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Sentase", false);
 			Answers en_3_2 = new Answers("b. Hacer", false);
@@ -70,7 +72,8 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("Selecciona la traducción correcta de SEEM", list_en_answers_3);
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Selecciona la traducción correcta de SEEM",
+					list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Trabajar", false);
 			Answers en_4_2 = new Answers("b. Hablar", false);
@@ -81,7 +84,8 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("Selecciona la traducción correcta de WANT", list_en_answers_4);
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("Selecciona la traducción correcta de WANT",
+					list_en_answers_4);
 
 			/*
 			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
@@ -105,14 +109,15 @@ public class QuestionController {
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
 
 		} else if (category.equalsIgnoreCase("science")) {
-			
+
 			Answers[] list_en_answers_1 = new Answers[4];
 			list_en_answers_1[0] = new Answers("a. El píe.", false);
 			list_en_answers_1[1] = new Answers("b. La Mano.", true);
 			list_en_answers_1[2] = new Answers("c. El Rostro.", false);
 			list_en_answers_1[3] = new Answers("d. Ninguna de las anteriores.", false);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("¿Cual es la parte del cuerpo humano que tiene más huesos?", list_en_answers_1);
+			QuestionAndAnswers en_1 = new QuestionAndAnswers(
+					"¿Cual es la parte del cuerpo humano que tiene más huesos?", list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. Avestruz.", false);
 			Answers en_2_2 = new Answers("b. Cuervo.", false);
@@ -123,7 +128,8 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿Cual de los siguientes animales no es omnívoro?", list_en_answers_2);
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿Cual de los siguientes animales no es omnívoro?",
+					list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Antenas y cuatro patas.", false);
 			Answers en_3_2 = new Answers("b. Alas y Antenas.", false);
@@ -145,7 +151,8 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Cual de los siguientes animales no es un mamífero?", list_en_answers_4);
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Cual de los siguientes animales no es un mamífero?",
+					list_en_answers_4);
 
 			/*
 			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
@@ -169,7 +176,7 @@ public class QuestionController {
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
 
 		} else if (category.equalsIgnoreCase("history")) {
-			
+
 			Answers[] list_en_answers_1 = new Answers[4];
 			list_en_answers_1[0] = new Answers("a. 1492", true);
 			list_en_answers_1[1] = new Answers("b. 1500", false);
@@ -187,7 +194,8 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿En que guerra participó Juana de Arco?", list_en_answers_2);
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿En que guerra participó Juana de Arco?",
+					list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Cuzco", true);
 			Answers en_3_2 = new Answers("b. Quito", false);
@@ -198,7 +206,8 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Cuál era la capital del Imperio Inca?", list_en_answers_3);
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Cuál era la capital del Imperio Inca?",
+					list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Siglo XVI", false);
 			Answers en_4_2 = new Answers("b. Siglo XVII", false);
@@ -209,7 +218,8 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Cuándo se produjo principalmente el Siglo de Oro?", list_en_answers_4);
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Cuándo se produjo principalmente el Siglo de Oro?",
+					list_en_answers_4);
 
 			/*
 			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
@@ -233,14 +243,16 @@ public class QuestionController {
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
 
 		} else if (category.equalsIgnoreCase("logic")) {
-			
+
 			Answers[] list_en_answers_1 = new Answers[4];
 			list_en_answers_1[0] = new Answers("a. 4 vacas.", false);
 			list_en_answers_1[1] = new Answers("b. Ninguna vaca.", false);
 			list_en_answers_1[2] = new Answers("c. 10 vacas.", false);
 			list_en_answers_1[3] = new Answers("d. 6 vacas.", true);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("En un corral tienen diez vacas, todas mueren menos seis. ¿Cuántas Vacas quedan?", list_en_answers_1);
+			QuestionAndAnswers en_1 = new QuestionAndAnswers(
+					"En un corral tienen diez vacas, todas mueren menos seis. ¿Cuántas Vacas quedan?",
+					list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. De primero.", false);
 			Answers en_2_2 = new Answers("b. De segundo.", true);
@@ -251,7 +263,8 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿En que posición quedas si adelantas al segundo en una carrera?", list_en_answers_2);
+			QuestionAndAnswers en_2 = new QuestionAndAnswers(
+					"¿En que posición quedas si adelantas al segundo en una carrera?", list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Solo un mes.", false);
 			Answers en_3_2 = new Answers("b. Todos los meses.", true);
@@ -273,7 +286,8 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Si un tren eléctrico va de Norte a sur. ¿hacia qué lado echará el humo?", list_en_answers_4);
+			QuestionAndAnswers en_4 = new QuestionAndAnswers(
+					"¿Si un tren eléctrico va de Norte a sur. ¿hacia qué lado echará el humo?", list_en_answers_4);
 
 			/*
 			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
@@ -297,7 +311,7 @@ public class QuestionController {
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
 
 		} else if (category.equalsIgnoreCase("math")) {
-			
+
 			Answers[] list_en_answers_1 = new Answers[4];
 			list_en_answers_1[0] = new Answers("a. 4", true);
 			list_en_answers_1[1] = new Answers("b. 6", false);
@@ -315,7 +329,8 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿Cuantas unidades equivale 10 decenas de millar?", list_en_answers_2);
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿Cuantas unidades equivale 10 decenas de millar?",
+					list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. 50", false);
 			Answers en_3_2 = new Answers("b. 55", false);
@@ -326,7 +341,8 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Cual es la decena más próxima de 58?", list_en_answers_3);
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Cual es la decena más próxima de 58?",
+					list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Cinco.", true);
 			Answers en_4_2 = new Answers("b. Diez.", false);
@@ -337,7 +353,8 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Que cantidad expresa el numero romano V?", list_en_answers_4);
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Que cantidad expresa el numero romano V?",
+					list_en_answers_4);
 
 			/*
 			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
@@ -361,14 +378,15 @@ public class QuestionController {
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
 
 		} else if (category.equalsIgnoreCase("religion")) {
-			
+
 			Answers[] list_en_answers_1 = new Answers[4];
 			list_en_answers_1[0] = new Answers("a. 250 millones de especies.", false);
 			list_en_answers_1[1] = new Answers("b. 645 millones de especies.", false);
 			list_en_answers_1[2] = new Answers("c. 7,77 millones de especies.", false);
 			list_en_answers_1[3] = new Answers("d. Ninguna porque era Noé.", true);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("¿Cuantos animales metió Moisés en el arca?", list_en_answers_1);
+			QuestionAndAnswers en_1 = new QuestionAndAnswers("¿Cuantos animales metió Moisés en el arca?",
+					list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. 1 día.", false);
 			Answers en_2_2 = new Answers("b. 3 días.", true);
@@ -390,7 +408,8 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Quien de los discípulos traicionó a Jesús?", list_en_answers_3);
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Quien de los discípulos traicionó a Jesús?",
+					list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. El sexto día", false);
 			Answers en_4_2 = new Answers("b. El primer día", true);
@@ -401,7 +420,8 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿En que día fueron hechos los cielos y la tierra?", list_en_answers_4);
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿En que día fueron hechos los cielos y la tierra?",
+					list_en_answers_4);
 
 			/*
 			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
