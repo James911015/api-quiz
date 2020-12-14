@@ -48,7 +48,7 @@ public class QuestionController {
 			list_en_answers_1[2] = new Answers("c. Asco", false);
 			list_en_answers_1[3] = new Answers("d. Ninguna", false);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("Selecciona la traducción correcta de ASK",
+			QuestionAndAnswers en_1 = new QuestionAndAnswers("Selecciona la traduccion correcta de ASK?",
 					list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. Comer", false);
@@ -60,7 +60,7 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("Selecciona la traducción correcta de COME",
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("Selecciona la traduccion correcta de COME?",
 					list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Sentase", false);
@@ -72,7 +72,7 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("Selecciona la traducción correcta de SEEM",
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Selecciona la traduccion correcta de SEEM?",
 					list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Trabajar", false);
@@ -84,7 +84,7 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("Selecciona la traducción correcta de WANT",
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("Selecciona la traduccion correcta de WANT?",
 					list_en_answers_4);
 
 			/*
@@ -111,13 +111,13 @@ public class QuestionController {
 		} else if (category.equalsIgnoreCase("science")) {
 
 			Answers[] list_en_answers_1 = new Answers[4];
-			list_en_answers_1[0] = new Answers("a. El píe.", false);
+			list_en_answers_1[0] = new Answers("a. El pie.", false);
 			list_en_answers_1[1] = new Answers("b. La Mano.", true);
 			list_en_answers_1[2] = new Answers("c. El Rostro.", false);
 			list_en_answers_1[3] = new Answers("d. Ninguna de las anteriores.", false);
 
 			QuestionAndAnswers en_1 = new QuestionAndAnswers(
-					"¿Cual es la parte del cuerpo humano que tiene más huesos?", list_en_answers_1);
+					"Cual es la parte del cuerpo humano que tiene mas huesos?", list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. Avestruz.", false);
 			Answers en_2_2 = new Answers("b. Cuervo.", false);
@@ -128,7 +128,7 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿Cual de los siguientes animales no es omnívoro?",
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("Cual de los siguientes animales no es omnivoro?",
 					list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Antenas y cuatro patas.", false);
@@ -140,18 +140,18 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Que comparten todos los insectos?", list_en_answers_3);
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Que comparten todos los insectos?", list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Pez Espada.", true);
-			Answers en_4_2 = new Answers("b. Delfín.", false);
+			Answers en_4_2 = new Answers("b. Delfin.", false);
 			Answers en_4_3 = new Answers("c. Orca.", false);
-			Answers en_4_4 = new Answers("d. Manatí.", false);
+			Answers en_4_4 = new Answers("d. Manati.", false);
 			Answers[] list_en_answers_4 = new Answers[4];
 			list_en_answers_4[0] = en_4_1;
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Cual de los siguientes animales no es un mamífero?",
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("Cual de los siguientes animales no es un mamifero?",
 					list_en_answers_4);
 
 			/*
@@ -183,7 +183,7 @@ public class QuestionController {
 			list_en_answers_1[2] = new Answers("c. 2009", false);
 			list_en_answers_1[3] = new Answers("d. Ninguna de las anteriores", false);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("¿En que año descubrió Colón América?", list_en_answers_1);
+			QuestionAndAnswers en_1 = new QuestionAndAnswers("En que ano descubrio Colon America?", list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. Primera cruzada", false);
 			Answers en_2_2 = new Answers("b. Guerra de las galaxias", false);
@@ -194,7 +194,7 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿En que guerra participó Juana de Arco?",
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("En que guerra participo Juana de Arco?",
 					list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Cuzco", true);
@@ -206,7 +206,7 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Cuál era la capital del Imperio Inca?",
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Cuál era la capital del Imperio Inca?",
 					list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Siglo XVI", false);
@@ -218,7 +218,7 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Cuándo se produjo principalmente el Siglo de Oro?",
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("Cuando se produjo principalmente el Siglo de Oro?",
 					list_en_answers_4);
 
 			/*
@@ -251,7 +251,7 @@ public class QuestionController {
 			list_en_answers_1[3] = new Answers("d. 6 vacas.", true);
 
 			QuestionAndAnswers en_1 = new QuestionAndAnswers(
-					"En un corral tienen diez vacas, todas mueren menos seis. ¿Cuántas Vacas quedan?",
+					"En un corral tienen diez vacas, todas mueren menos seis. Cuantas Vacas quedan?",
 					list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. De primero.", false);
@@ -264,7 +264,7 @@ public class QuestionController {
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
 			QuestionAndAnswers en_2 = new QuestionAndAnswers(
-					"¿En que posición quedas si adelantas al segundo en una carrera?", list_en_answers_2);
+					"En que posicion quedas si adelantas al segundo en una carrera?", list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Solo un mes.", false);
 			Answers en_3_2 = new Answers("b. Todos los meses.", true);
@@ -275,19 +275,19 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Cuantos meses tienen 28 días?", list_en_answers_3);
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Cuantos meses tienen 28 dias?", list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Hacia el Sur.", false);
 			Answers en_4_2 = new Answers("b. Hacia el Norte.", false);
 			Answers en_4_3 = new Answers("c. Hacia el Occidente.", false);
-			Answers en_4_4 = new Answers("d. Hacia ningún lado, es eléctrico.", true);
+			Answers en_4_4 = new Answers("d. Hacia ningun lado, es electrico.", true);
 			Answers[] list_en_answers_4 = new Answers[4];
 			list_en_answers_4[0] = en_4_1;
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
 			QuestionAndAnswers en_4 = new QuestionAndAnswers(
-					"¿Si un tren eléctrico va de Norte a sur. ¿hacia qué lado echará el humo?", list_en_answers_4);
+					"Si un tren electrico va de Norte a sur. hacia que lado echara el humo?", list_en_answers_4);
 
 			/*
 			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
@@ -318,7 +318,7 @@ public class QuestionController {
 			list_en_answers_1[2] = new Answers("c. 8", false);
 			list_en_answers_1[3] = new Answers("d. 10", false);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("¿Cuanto es 2x2?", list_en_answers_1);
+			QuestionAndAnswers en_1 = new QuestionAndAnswers("Cuanto es 2x2?", list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. 1.000.000 unidades", false);
 			Answers en_2_2 = new Answers("b. 100.000 unidades.", true);
@@ -329,7 +329,7 @@ public class QuestionController {
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿Cuantas unidades equivale 10 decenas de millar?",
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("Cuantas unidades equivale 10 decenas de millar?",
 					list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. 50", false);
@@ -341,7 +341,7 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Cual es la decena más próxima de 58?",
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Cual es la decena mas proxima de 58?",
 					list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Cinco.", true);
@@ -353,7 +353,7 @@ public class QuestionController {
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿Que cantidad expresa el numero romano V?",
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("Que cantidad expresa el numero romano V?",
 					list_en_answers_4);
 
 			/*
@@ -385,19 +385,19 @@ public class QuestionController {
 			list_en_answers_1[2] = new Answers("c. 7,77 millones de especies.", false);
 			list_en_answers_1[3] = new Answers("d. Ninguna porque era Noé.", true);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers("¿Cuantos animales metió Moisés en el arca?",
+			QuestionAndAnswers en_1 = new QuestionAndAnswers("Cuantos animales metio Moises en el arca?",
 					list_en_answers_1);
 
-			Answers en_2_1 = new Answers("a. 1 día.", false);
-			Answers en_2_2 = new Answers("b. 3 días.", true);
-			Answers en_2_3 = new Answers("c. 6 días.", false);
-			Answers en_2_4 = new Answers("d. 4 días.", false);
+			Answers en_2_1 = new Answers("a. 1 dia.", false);
+			Answers en_2_2 = new Answers("b. 3 dias.", true);
+			Answers en_2_3 = new Answers("c. 6 dias.", false);
+			Answers en_2_4 = new Answers("d. 4 dias.", false);
 			Answers[] list_en_answers_2 = new Answers[4];
 			list_en_answers_2[0] = en_2_1;
 			list_en_answers_2[1] = en_2_2;
 			list_en_answers_2[2] = en_2_3;
 			list_en_answers_2[3] = en_2_4;
-			QuestionAndAnswers en_2 = new QuestionAndAnswers("¿En cuantos días resucitó Jesús?", list_en_answers_2);
+			QuestionAndAnswers en_2 = new QuestionAndAnswers("En cuantos dias resucito Jesus?", list_en_answers_2);
 
 			Answers en_3_1 = new Answers("a. Judas Tadeo.", false);
 			Answers en_3_2 = new Answers("b. Judas Macabeo.", false);
@@ -408,19 +408,19 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("¿Quien de los discípulos traicionó a Jesús?",
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Quien de los discipulos traiciono a Jesus?",
 					list_en_answers_3);
 
-			Answers en_4_1 = new Answers("a. El sexto día", false);
-			Answers en_4_2 = new Answers("b. El primer día", true);
-			Answers en_4_3 = new Answers("c. El séptimo día", false);
-			Answers en_4_4 = new Answers("d. El Cuarto día", false);
+			Answers en_4_1 = new Answers("a. El sexto dia", false);
+			Answers en_4_2 = new Answers("b. El primer dia", true);
+			Answers en_4_3 = new Answers("c. El septimo dia", false);
+			Answers en_4_4 = new Answers("d. El Cuarto dia", false);
 			Answers[] list_en_answers_4 = new Answers[4];
 			list_en_answers_4[0] = en_4_1;
 			list_en_answers_4[1] = en_4_2;
 			list_en_answers_4[2] = en_4_3;
 			list_en_answers_4[3] = en_4_4;
-			QuestionAndAnswers en_4 = new QuestionAndAnswers("¿En que día fueron hechos los cielos y la tierra?",
+			QuestionAndAnswers en_4 = new QuestionAndAnswers("En que dia fueron hechos los cielos y la tierra?",
 					list_en_answers_4);
 
 			/*
