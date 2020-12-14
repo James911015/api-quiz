@@ -187,7 +187,7 @@ public class QuestionController {
 
 			Answers en_2_1 = new Answers("a. Primera cruzada", false);
 			Answers en_2_2 = new Answers("b. Guerra de las galaxias", false);
-			Answers en_2_3 = new Answers("c. La guerra de los 100 años", true);
+			Answers en_2_3 = new Answers("c. La guerra de los 100 anos", true);
 			Answers en_2_4 = new Answers("d. Ninguna de las anteriores", false);
 			Answers[] list_en_answers_2 = new Answers[4];
 			list_en_answers_2[0] = en_2_1;
@@ -206,7 +206,7 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("Cuál era la capital del Imperio Inca?",
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Cual era la capital del Imperio Inca?",
 					list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Siglo XVI", false);
@@ -269,7 +269,7 @@ public class QuestionController {
 			Answers en_3_1 = new Answers("a. Solo un mes.", false);
 			Answers en_3_2 = new Answers("b. Todos los meses.", true);
 			Answers en_3_3 = new Answers("c. Seis meses.", false);
-			Answers en_3_4 = new Answers("d. Ningún mes.", false);
+			Answers en_3_4 = new Answers("d. Ningun mes.", false);
 			Answers[] list_en_answers_3 = new Answers[4];
 			list_en_answers_3[0] = en_3_1;
 			list_en_answers_3[1] = en_3_2;
@@ -383,7 +383,7 @@ public class QuestionController {
 			list_en_answers_1[0] = new Answers("a. 250 millones de especies.", false);
 			list_en_answers_1[1] = new Answers("b. 645 millones de especies.", false);
 			list_en_answers_1[2] = new Answers("c. 7,77 millones de especies.", false);
-			list_en_answers_1[3] = new Answers("d. Ninguna porque era Noé.", true);
+			list_en_answers_1[3] = new Answers("d. Ninguna porque era Noe.", true);
 
 			QuestionAndAnswers en_1 = new QuestionAndAnswers("Cuantos animales metio Moises en el arca?",
 					list_en_answers_1);
