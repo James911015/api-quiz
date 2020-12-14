@@ -116,8 +116,8 @@ public class QuestionController {
 			list_en_answers_1[2] = new Answers("c. El Rostro.", false);
 			list_en_answers_1[3] = new Answers("d. Ninguna de las anteriores.", false);
 
-			QuestionAndAnswers en_1 = new QuestionAndAnswers(
-					"Cual es la parte del cuerpo humano que tiene mas huesos?", list_en_answers_1);
+			QuestionAndAnswers en_1 = new QuestionAndAnswers("Cual es la parte del cuerpo humano que tiene mas huesos?",
+					list_en_answers_1);
 
 			Answers en_2_1 = new Answers("a. Avestruz.", false);
 			Answers en_2_2 = new Answers("b. Cuervo.", false);
@@ -154,23 +154,23 @@ public class QuestionController {
 			QuestionAndAnswers en_4 = new QuestionAndAnswers("Cual de los siguientes animales no es un mamifero?",
 					list_en_answers_4);
 
-			/*
-			 * Answers en_5_1 = new Answers("answer5_1", false); Answers en_5_2
-			 * = new Answers("answer5_2", false); Answers en_5_3 = new
-			 * Answers("answer5_3", false); Answers en_5_4 = new
-			 * Answers("answer5_4", true); Answers[] list_en_answers_5 = new
-			 * Answers[4]; list_en_answers_5[0] = en_5_1; list_en_answers_5[1] =
-			 * en_5_2; list_en_answers_5[2] = en_5_3; list_en_answers_5[3] =
-			 * en_5_4; QuestionAndAnswers en_5 = new
-			 * QuestionAndAnswers("Pregunta5", list_en_answers_5);
-			 */
+			Answers en_5_1 = new Answers("a. 100000km/s", false);
+			Answers en_5_2 = new Answers("b. 200000km/s", false);
+			Answers en_5_3 = new Answers("c. 300000km/s", true);
+			Answers en_5_4 = new Answers("d. 400000km/s", false);
+			Answers[] list_en_answers_5 = new Answers[4];
+			list_en_answers_5[0] = en_5_1;
+			list_en_answers_5[1] = en_5_2;
+			list_en_answers_5[2] = en_5_3;
+			list_en_answers_5[3] = en_5_4;
+			QuestionAndAnswers en_5 = new QuestionAndAnswers("Cual es la velocidad de la luz?", list_en_answers_5);
 
 			ArrayList<QuestionAndAnswers> list_en_questions = new ArrayList<>();
 			list_en_questions.add(en_1);
 			list_en_questions.add(en_2);
 			list_en_questions.add(en_3);
 			list_en_questions.add(en_4);
-			// list_en_questions.add(en_5);
+			list_en_questions.add(en_5);
 
 			CategoryJson CategoryEnglish = new CategoryJson("science", list_en_questions);
 			return new ResponseEntity<>(CategoryEnglish, HttpStatus.OK);
@@ -341,8 +341,7 @@ public class QuestionController {
 			list_en_answers_3[1] = en_3_2;
 			list_en_answers_3[2] = en_3_3;
 			list_en_answers_3[3] = en_3_4;
-			QuestionAndAnswers en_3 = new QuestionAndAnswers("Cual es la decena mas proxima de 58?",
-					list_en_answers_3);
+			QuestionAndAnswers en_3 = new QuestionAndAnswers("Cual es la decena mas proxima de 58?", list_en_answers_3);
 
 			Answers en_4_1 = new Answers("a. Cinco.", true);
 			Answers en_4_2 = new Answers("b. Diez.", false);
